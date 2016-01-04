@@ -1,3 +1,8 @@
+body, html { margin: 0; padding: 0; }
+
+.container { margin : 25px; padding: 25px; }
+
 .showcase div { display: none; }
 .showcase div.active { display: block; }
 .tabs li { list-style-type: none; display: inline-block; cursor: pointer; }
+ul.tabs { text-align: center; padding: 0; margin: 0; }
