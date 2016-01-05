@@ -7,11 +7,14 @@ body, html { margin: 0; padding: 0; }
 .contained1, .contained2 { width: 1280px; margin : auto; padding: 0 25px; }
 header{  background-color: #222222; padding: 15px 0; }
 h1{ width: 1280px; margin:auto; }
-h1 a { color: #2a9fd6; text-decoration: none; }
+h1 a, h1 a:visited { color: #2a9fd6; text-decoration: none; }
 
 .showcase div { display: none; }
 .showcase div.active { display: block; }
-.tabs li { list-style-type: none; display: inline-block; cursor: pointer; padding: 10px; color: white; background-color: #2a9fd6; margin: 10px; border-radius: 3px; border: 1px solid #2a9fd6; }
+.tabs li { list-style-type: none; display: inline-block; cursor: pointer; padding: 10px; color: white; background-color: #2a9fd6; margin: 10px; border-radius: 3px; border: 1px solid #1856CF; }
+.tabs li .active { background-color: #1856CF; }
 ul.tabs { text-align: center; padding: 0; margin: 0; }
 p{ margin: auto; text-align: center; padding: 25px 0 0; }
 h2{ margin: auto; padding-top: 30px; color: #2a9fd6; }
+a { color: #2a9fd6; }
+a:visited { color: #1856CF; }
