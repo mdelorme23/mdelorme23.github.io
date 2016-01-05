@@ -1,6 +1,7 @@
 body, html { margin: 0; padding: 0; }
 
-.container { width: 1280px; margin : auto; padding: 0 25px; }
+.container { background-color: #444444; }
+.contained1, .contained2 { width: 1280px; margin : auto; padding: 0 25px; }
 header{  background-color: #222222; color: #FFF; margin-bottom: 25px;  }
 h1{ width: 1280px; margin:auto; }
 
