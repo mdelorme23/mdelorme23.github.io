@@ -11,13 +11,13 @@ h1 a, h1 a:visited { color: #2a9fd6; text-decoration: none; font-weight: normal;
 
 .showcase div { display: none; }
 .showcase div.active { display: block; }
-.tabs li { list-style-type: none; font-weight: 300; display: inline-block; cursor: pointer; padding: 5px 10px 7px; font-size: 18px; color: white; background-color: #2a9fd6; margin: 10px; border-radius: 5px; border-bottom: 3px solid #1856CF; }
-.tabs li.active { background-color: #1856CF; border-bottom: 3px solid #13377E; }
+.tabs li { list-style-type: none; font-weight: 300; display: inline-block; cursor: pointer; padding: 5px 10px 7px; font-size: 18px; color: white; background-color: #2a9fd6; margin: 10px; border-radius: 5px; border-bottom: 3px solid #1856CF; transition: background-color 0.3s, border-bottom 0.3s;}
+.tabs li.active, .tabs li:hover { background-color: #1856CF; border-bottom: 3px solid #13377E; }
 ul.tabs { text-align: center; padding: 0; margin: 0; }
 p { margin: auto; text-align: center; padding: 25px 0 0; }
 h2 { margin: auto; padding-top: 30px; color: #2a9fd6;  font-size: 34px; }
-a { color: #2a9fd6; }
-a:visited { color: #1856CF; }
+a, a:visited { color: #2a9fd6; transition: color 0.3s;}
+a:hover { color: #1856CF; }
 ul.infos { padding: 0; }
 .infos li { list-style-type: none; }
 .float { float:left; }
