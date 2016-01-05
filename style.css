@@ -3,17 +3,18 @@
 body, html { margin: 0; padding: 0; }
 
 .container1, .container2 { padding: 25px 0 50px; background-color: #555555; color: #DDDDDD; }
-.container2 { background-color: #222222; box-shadow: -5px 15px 25px 20px #111; }
+.container2 { background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px 15px 25px 20px #111; }
+/* Background pattern from subtlepatterns.com */
 .contained1, .contained2 { width: 1280px; margin : auto; }
 header{  background-color: #222222; box-shadow: -5px -15px 25px 20px #111; position: relative; }
 h1{ width: 1280px; margin:auto; padding-bottom: 5px; }
-h1 a, h1 a:visited { color: #2a9fd6; text-decoration: none; font-weight: normal; font-size: 40px; padding-bottom: 5px; }
+h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-weight: normal; font-size: 40px; padding-bottom: 5px; }
 
 .showcase div { display: none; }
 .showcase div.active { display: block; }
 .tabs li { list-style-type: none; font-weight: 300; display: inline-block; cursor: pointer; padding: 5px 10px 7px; font-size: 18px; color: white; background-color: #2a9fd6; margin: 10px; border-radius: 5px; border-bottom: 3px solid #1856CF; transition: background-color 0.3s, border-bottom 0.3s;}
 .tabs li.active, .tabs li:hover { background-color: #1856CF; border-bottom: 3px solid #13377E; }
-ul.tabs { text-align: center; padding: 0; margin: 0; }
+ul.tabs { text-align: center; padding: 0; margin: 0; margin-top: -51px; }
 p { margin: auto; text-align: center; padding: 10px; width: 480px; background-color: #444444; margin-top: 25px; border-radius: 10px; box-shadow: 5px 5px 5px 0 #222; }
 p > a:hover { color: #46AEE0; }
 h2 { margin: auto; padding-top: 30px; color: #2a9fd6;  font-size: 34px; }
