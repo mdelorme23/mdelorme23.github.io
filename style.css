@@ -2,11 +2,11 @@
 
 body, html { margin: 0; padding: 0; }
 
-.container1, .container2 { padding: 25px 0 50px; background-color: #555555; color: #DDDDDD; }
+.container1, .container2 { padding: 25px 0 50px; background: transparent url("img/triangles_try.png") repeat scroll 0% 0%; color: #DDDDDD; }
 .container2 { background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px 15px 25px 20px #111; }
 /* Background pattern from subtlepatterns.com */
 .contained1, .contained2 { width: 1280px; margin : auto; }
-header{  background-color: #222222; box-shadow: -5px -15px 25px 20px #111; position: relative; }
+header{  background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px -15px 25px 20px #111; position: relative; }
 h1{ width: 1280px; margin:auto; padding-bottom: 5px; }
 h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-weight: normal; font-size: 40px; padding-bottom: 5px; }
 
