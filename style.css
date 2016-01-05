@@ -2,7 +2,7 @@
 
 body, html { margin: 0; padding: 0; }
 
-.container1, .container2 { padding: 25px 0 50px; background: transparent url("img/confectionary.png") repeat scroll 0% 0%; color: #DDDDDD; }
+.container1, .container2 { padding: 25px 0 50px; background: transparent url("img/pinstriped_suit.png") repeat scroll 0% 0%; color: #DDDDDD; }
 /* Background pattern from subtlepatterns.com */
 .container2 { background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px 15px 25px 20px #111; }
 /* Background pattern from subtlepatterns.com */
