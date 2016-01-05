@@ -24,3 +24,6 @@ ul.infos { padding: 0; }
 .left { width: 1030px; }
 .right { width: 250px; }
 .clear { clear:both; }
+.hideBehind { margin-left: -50px; z-index: -1; position: relative; }
+a.icons { opacity: 1; transition: opacity .3s; }
+a.icons:hover .fade { opacity: 0; }
