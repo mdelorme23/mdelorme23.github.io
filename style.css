@@ -1,7 +1,8 @@
 body, html { margin: 0; padding: 0; }
 
-.container { margin : 25px; padding: 25px; margin-top: 0; padding-top: 0; }
-h1{ margin-bottom: 25px; padding-bottom: 25px; }
+.container { width: 1280px; margin : auto; padding: 0 25px; }
+header{ width: 1280px; margin:auto; background-color: #222222; color: #FFF; }
+h1{ margin-bottom: 25px;  }
 
 .showcase div { display: none; }
 .showcase div.active { display: block; }
