@@ -45,3 +45,5 @@ a.icons { opacity: 1; transition: opacity .5s; }
 a.icons:hover .fade { opacity: 0; }
 .portrait { border-radius: 25px; }
 .alignRight { text-align: right; float: right; color: #DDDDDD; font-size: 16px; }
+.alignRight a, .alignRight a:visited{ color: #DDDDDD; font-size: 16px; }
+.alignRight a:hover { color: #46AEE0; font-size: 16px; }
