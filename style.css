@@ -34,7 +34,7 @@ h2 { margin: auto; padding-top: 30px; color: #2a9fd6;  font-size: 34px; }
 a, a:visited { color: #2a9fd6; transition: color 0.3s;}
 a:hover { color: #1856CF; }
 ul.infos { padding: 0; }
-.infos li { list-style-type: none; }
+.infos > li { list-style-type: none; }
 .float { float:left; }
 .left { width: 1030px; }
 .right { width: 250px; }
