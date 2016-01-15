@@ -23,7 +23,7 @@ li.marche { background-image: url("img/thumb_marche.png"); }
 li.dodgeball { background-image: url("img/thumb_Dodgeball.png"); }
 
 div.overlay { width: 100%; display: block; height: 100%; transition: background-color 0.3s; }
-div.overlay:hover { background-color: rgba(24,86,207,0.5); }
+div.overlay:hover, .tabs li.active div.overlay { background-color: rgba(24,86,207,0.25); }
 .tabs li.active { background-color: #1856CF; border-bottom: 3px solid #13377E; }
 .tabs li:hover { border-bottom: 3px solid #13377E; }
 ul.tabs { text-align: center; padding: 0; margin: 0; margin-bottom: 25px; }
