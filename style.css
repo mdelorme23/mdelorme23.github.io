@@ -47,5 +47,5 @@ a.icons:hover .fade { opacity: 0; }
 .alignRight { text-align: right; float: right; color: #DDDDDD; font-size: 16px; font-weight: 300; margin-top: 5px; }
 .alignRight a, .alignRight a:visited{ color: #DDDDDD; font-size: 16px; font-weight: 300; }
 .alignRight a:hover { color: #46AEE0; font-size: 16px; font-weight: 300; }
-.text { margin: 5px 0 30px; }
+.text { margin: 5px 0 30px; width: 800px; }
 .float.left h2 { padding-top: 0; }
