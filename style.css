@@ -19,7 +19,7 @@ h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-wei
 li.lutte { background-image: url("img/thumb_Lutte.png"); }
 li.lancer { background-image: url("img/thumb_Lancer.png"); }
 li.marche { background-image: url("img/thumb_marche.png"); }
-li.dodgeball { background-image: url("img/thumb_dodgeball.png"); }
+li.dodgeball { background-image: url("img/thumb_Dodgeball.png"); }
 .tabs li.active { background-color: #1856CF; border-bottom: 3px solid #13377E; }
 .tabs li:hover { border-bottom: 3px solid #13377E; }
 ul.tabs { text-align: center; padding: 0; margin: 0; margin-bottom: 25px; }
