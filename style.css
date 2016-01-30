@@ -19,6 +19,7 @@ h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-wei
 
 li.lutte { background-image: url("img/thumb_Lutte.png"); }
 li.marche_chat { background-image: url("img/thumb_MarcheChat.png"); }
+li.course_chat { background-image: url("img/thumb_CourseChat.png"); }
 li.lancer { background-image: url("img/thumb_Lancer.png"); }
 li.marche { background-image: url("img/thumb_marche.png"); }
 li.dodgeball { background-image: url("img/thumb_Dodgeball.png"); }
