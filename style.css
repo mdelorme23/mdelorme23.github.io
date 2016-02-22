@@ -23,6 +23,8 @@ li.course_chat { background-image: url("img/thumb_CourseChat.png"); }
 li.lancer { background-image: url("img/thumb_Lancer.png"); }
 li.marche { background-image: url("img/thumb_marche.png"); }
 
+iframe { display: block; margin: auto; }
+
 div.overlay { width: 100%; display: block; height: 100%; transition: background-color 0.3s; }
 div.overlay:hover, .tabs li.active div.overlay { background-color: rgba(24,86,207,0.25); }
 .tabs li.active { background-color: #1856CF; border-bottom: 3px solid #13377E; }
