@@ -17,7 +17,7 @@ h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-wei
 /*.tabs li { list-style-type: none; font-weight: 300; display: inline-block; cursor: pointer; padding: 5px 10px 7px; font-size: 18px; color: white; background-color: #2a9fd6; margin: 10px; border-radius: 5px; border-bottom: 3px solid #1856CF; transition: background-color 0.3s, border-bottom 0.3s;}*/
 .tabs li { list-style-type: none; display: inline-block; cursor: pointer; width: 150px; height: 150px; border-bottom: 3px solid #1856CF; transition: border-bottom 0.3s; }
 
-.vids { width: 50%; display: inline-block; }
+.vids { width: 49.5%; display: inline-block; }
 
 .floats { width: 50%; float: left; }
 .floats + a { clear: both; }
