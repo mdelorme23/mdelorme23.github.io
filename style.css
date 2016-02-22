@@ -23,6 +23,9 @@ li.course_chat { background-image: url("img/thumb_CourseChat.png"); }
 li.lancer { background-image: url("img/thumb_Lancer.png"); }
 li.marche { background-image: url("img/thumb_marche.png"); }
 
+.floats { width: 50%; float: left; }
+.floats + a { clear: both; }
+
 iframe { display: block; margin: auto; }
 
 div.overlay { width: 100%; display: block; height: 100%; transition: background-color 0.3s; }
