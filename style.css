@@ -63,8 +63,4 @@ a.icons:hover .fade { opacity: 0; }
 	.vids { width: 100%; }
 	.text { float: left; }
 	h2 { clear: both; }
-	.mobile { display: block; }
-	.non-mobile { display: none; }
-	.left { width: 100%; max-width: none; }
-	.text { width: calc(100% - 250px); }
 }
