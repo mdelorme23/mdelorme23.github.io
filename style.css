@@ -19,8 +19,14 @@ h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-wei
 .vids { display: inline-block; margin: 15px 10px; min-width: 560px; width: 48%; }
 .vids:nth-child(odd):last-child { width: 100%; }
 
+.mobile { display: none; }
+.non-mobile { display: block; }
 @media only screen and (max-width: 1140px) {
 	.vids { width: 100%; }
+	.text { float: right; }
+	h2 { clear: both; }
+	.mobile { display: block; }
+	.non-mobile { display: none; }
 }
 
 .floats { width: 49.5%; display: inline-block; }/* not so float anymore */
