@@ -24,7 +24,6 @@ h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-wei
 @media only screen and (max-width: 1140px) {
 	.vids { width: 100%; }
 	.text { float: left; }
-	.float.right { float:right; }
 	h2 { clear: both; }
 	.mobile { display: block; }
 	.non-mobile { display: none; }
@@ -48,8 +47,9 @@ a:hover { color: #1856CF; }
 ul.infos { padding: 0; }
 .infos > li { list-style-type: none; }
 .float { float:left; }
-.left { max-width: 1030px; }
+.left { max-width: 1030px; width: 80%; }
 .right { width: 250px; }
+.float.right { float:right; }
 .clear { clear:both; }
 
 .hideBehind { margin-left: -50px; }
