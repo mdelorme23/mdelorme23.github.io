@@ -27,6 +27,8 @@ h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-wei
 	h2 { clear: both; }
 	.mobile { display: block; }
 	.non-mobile { display: none; }
+	.left { width: 100%; }
+	.text { width: calc(100% - 250px); }
 }
 
 .floats { width: 49.5%; display: inline-block; }/* not so float anymore */
