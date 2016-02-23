@@ -1,12 +1,12 @@
 * { font-family: "Open Sans", Arial, sans-serif;}
 
 body, html { margin: 0; padding: 0; }
-.container1, .container2 { padding: 25px 10px 50px; background: transparent url("img/pinstriped_suit.png") repeat scroll 0% 0%; color: #DDDDDD; }
+.container1, .container2 { padding: 25px 20px 50px; background: transparent url("img/pinstriped_suit.png") repeat scroll 0% 0%; color: #DDDDDD; }
 /* Background pattern from subtlepatterns.com */
 .container2 { background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px 15px 25px 20px #111; }
 /* Background pattern from subtlepatterns.com */
 .contained1, .contained2 { max-width: 1280px; min-width: 560px; margin : auto; }
-header{  background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px -15px 25px 20px #111; position: relative; padding: 0 10px; }
+header{  background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px -15px 25px 20px #111; position: relative; padding: 0 20px; }
 /* Background pattern from subtlepatterns.com */
 h1{ max-width: 1280px; min-width: 560px; margin:auto; padding-bottom: 5px; }
 h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-weight: normal; font-size: 40px; padding-bottom: 5px; }
@@ -16,15 +16,14 @@ h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-wei
 /*.tabs li { list-style-type: none; font-weight: 300; display: inline-block; cursor: pointer; padding: 5px 10px 7px; font-size: 18px; color: white; background-color: #2a9fd6; margin: 10px; border-radius: 5px; border-bottom: 3px solid #1856CF; transition: background-color 0.3s, border-bottom 0.3s;}*/
 .tabs li { list-style-type: none; display: inline-block; cursor: pointer; width: 150px; height: 150px; border-bottom: 3px solid #1856CF; transition: border-bottom 0.3s; }
 
-.vids { display: inline-block; margin: 15px 10px; min-width: 560px; max-width: 620px; width: 48%; }
+.vids { display: inline-block; margin: 15px 10px; min-width: 560px; width: 48%; }
 .vids:nth-child(odd):last-child { width: 100%; }
 
 @media only screen and (max-width: 1140px) {
 	.vids { width: 100%; }
 }
 
-.floats { width: 50%; float: left; }
-.floats + a { clear: both; }
+.floats { width: 49.5%; display: inline-block; }/* not so float anymore */
 
 iframe { display: block; margin: auto; }
 
