@@ -50,10 +50,13 @@ ul.infos { padding: 0; }
 .left { max-width: 1030px; }
 .right { width: 250px; }
 .clear { clear:both; }
+
 .hideBehind { margin-left: -50px; margin-top: 10px; }
 .fade { z-index: 2; position: relative; margin-top: 10px; }
 a.icons { opacity: 1; transition: opacity .5s; margin: 0 10px 0 0; }
 a.icons:hover .fade { opacity: 0; }
+.center-icons{ width: 100%; text-align: center; }
+
 .portrait { border-radius: 25px; }
 .alignRight { text-align: right; float: right; color: #DDDDDD; font-size: 16px; font-weight: 300; margin-top: 5px; }
 .alignRight a, .alignRight a:visited{ color: #DDDDDD; font-size: 16px; font-weight: 300; }
