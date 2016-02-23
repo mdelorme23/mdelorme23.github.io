@@ -63,11 +63,12 @@ a.icons:hover .fade { opacity: 0; }
 	.vids { width: 100%; }
 	.text { float: left; }
 	h2 { clear: both; }
+	.left { margin-right: 25px; width: calc(100% - 275px); }
 }
 
 @media only screen and (max-width: 960px) {
 	.mobile { display: block; }
 	.non-mobile { display: none; }
 	.left { width: 100%; max-width: none; }
-	.text { width: calc(100% - 250px); }
+	.text { width: calc(100% - 300px); }
 }
