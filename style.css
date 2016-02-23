@@ -54,8 +54,8 @@ ul.infos { padding: 0; }
 
 .hideBehind { margin-left: -50px; }
 .fade { z-index: 2; position: relative; }
-.first .hideBehind, .first .fade { margin-top: 10px; }
-a.icons { opacity: 1; transition: opacity .5s; margin: 0 10px 0 0; }
+.first .hideBehind, .first .fade { margin-right: 10px; }
+a.icons { opacity: 1; transition: opacity .5s; margin: 10px 0 0 0; }
 a.icons:hover .fade { opacity: 0; }
 .center-icons{ width: 100%; text-align: center; }
 
