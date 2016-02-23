@@ -24,6 +24,7 @@ h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-wei
 @media only screen and (max-width: 1140px) {
 	.vids { width: 100%; }
 	.text { float: left; }
+	.float.right { float:right; }
 	h2 { clear: both; }
 	.mobile { display: block; }
 	.non-mobile { display: none; }
