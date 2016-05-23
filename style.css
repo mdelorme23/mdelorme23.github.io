@@ -17,6 +17,7 @@ h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-wei
 .tabs li { list-style-type: none; display: inline-block; cursor: pointer; width: 150px; height: 150px; border-bottom: 3px solid #1856CF; transition: border-bottom 0.3s; }
 
 .vids { display: inline-block; margin: 15px 10px; min-width: 560px; width: 48%; }
+.demo { display: inline-block; margin: 15px 10px; min-width: 1280px; }
 .vids:nth-child(odd):last-child { width: 100%; }
 
 .mobile { display: none; }
