@@ -33,7 +33,7 @@ div.overlay:hover, .tabs li.active div.overlay { background-color: rgba(24,86,20
 .tabs li:hover { border-bottom: 3px solid #13377E; }
 ul.tabs { text-align: center; padding: 0; margin: 0; margin-bottom: 25px; }
 
-p { margin: auto; text-align: center; padding: 10px; width: 480px; background-color: #444444; margin-top: 25px; border-radius: 10px; box-shadow: 5px 5px 5px 0 #111; }
+p { margin: auto; text-align: center; padding: 10px; width: 480px; background-color: #444444; margin-top: 25px; border-radius: 10px; box-shadow: 5px 5px 5px 0 #111; color: #DDDDDD;}
 p > a:hover { color: #46AEE0; }
 h2 { margin: auto; padding-top: 30px; color: #2a9fd6;  font-size: 34px; }
 a, a:visited { color: #2a9fd6; transition: color 0.3s;}
