@@ -73,3 +73,7 @@ a.icons:hover .fade { opacity: 0; }
 	.left { width: 100%; max-width: none; }
 	.text { width: calc(100% - 300px); }
 }
+
+.link { display:block; width: 300px; margin:auto; padding-top: 10px; font-size:24px; }
+.link a, .link a:visited { color: #DDDDDD; }
+.link a:hover { color: #2a9fd6; }
