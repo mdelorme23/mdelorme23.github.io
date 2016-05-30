@@ -75,7 +75,7 @@ a.icons:hover .fade { opacity: 0; }
 }
 
 .link { display:block; width: 250px; margin:auto; padding-top: 10px; font-size:24px; text-align: center; }
-.link a, .link a:visited { color: #DDDDDD; }
+.link a, .link a:visited { color: #DDDDDD; text-decoration: default; }
 .link a:hover { color: #2a9fd6; }
 
-.offcenter {  }
+.offcenter { width: 720px; text-align: left; }
