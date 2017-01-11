@@ -7,7 +7,7 @@ $(function() {
 	//Loop through every hero populating the list
 	for(var i = 0; i< Object.keys(heroes).length; i++){
 		console.log(heroes[i].name);
-		var heroString = '<tr class="heroRow" data-name="' + heroes[i].name.cleanText() + '"><td><img src="img/' + heroes[i].name.cleanText() + '.png" title="' + heroes[i].name + '" width="75" height="75" /></td>';
+		var heroString = '<tr class="heroRow" data-name="' + heroes[i].name.cleanText() + '"><td><img src="img/' + heroes[i].name.cleanText().capitalize() + '.png" title="' + heroes[i].name + '" width="75" height="75" /></td>';
 		heroString += "<td><span class='tagIcons " + heroes[i].tag + "' title='" + heroes[i].tag + "'></span></td>";
 		heroesNames.push(heroes[i].name);
 		heroesTags.push(heroes[i].tag);
@@ -82,6 +82,11 @@ String.prototype.cleanText = function() {
     return this.replace(/'/g, '').replace(/ /g, '').replace(/\./g,'').toLowerCase();
 }
 
+//Capitalize
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
 //Fill the Hero List, special code for Cho'gall
 function heroList(heroesNames, heroesTags){
 	for(var i = 0; i<heroesNames.length; i++){
@@ -90,7 +95,7 @@ function heroList(heroesNames, heroesTags){
 				$('#heroList').append('<span class="listedHero" data-name="chogall" data-tag="Warrior Assassin"><img src="img/Chogall.png" title="Cho\'Gall" width="55" height="55" /></span>');
 			}
 		}else{
-			$('#heroList').append('<span class="listedHero" data-name="' + heroesNames[i].cleanText() + '" data-tag="' + heroesTags[i] + '"><img src="img/' + heroesNames[i].cleanText() + '.png" title="' + heroesNames[i] + '" width="55" height="55" /></span>');
+			$('#heroList').append('<span class="listedHero" data-name="' + heroesNames[i].cleanText() + '" data-tag="' + heroesTags[i] + '"><img src="img/' + heroesNames[i].cleanText().capitalize() + '.png" title="' + heroesNames[i] + '" width="55" height="55" /></span>');
 		}
 	}
 }
