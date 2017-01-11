@@ -6,7 +6,6 @@ $(function() {
 	var heroesTags = [];
 	//Loop through every hero populating the list
 	for(var i = 0; i< Object.keys(heroes).length; i++){
-		console.log(heroes[i].name);
 		var heroString = '<tr class="heroRow" data-name="' + heroes[i].name.cleanText() + '"><td><img src="img/' + heroes[i].name.cleanText().capitalize() + '.png" title="' + heroes[i].name + '" width="75" height="75" /></td>';
 		heroString += "<td><span class='tagIcons " + heroes[i].tag + "' title='" + heroes[i].tag + "'></span></td>";
 		heroesNames.push(heroes[i].name);
