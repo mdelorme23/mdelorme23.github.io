@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre -->
+    <title>HotS Team Comp Planner</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>HotS Team Comp Planner</h1>
+    <div id="filterBox">
+        <h2>Filters</h2>
+        <input type="text" name="search" class="search" placeholder="Search" autofocus> <button id="clearFilters" type="button">Clear filters</button> <button id="reset" type="button">Reset</button><br />
+        <span class="filter tagIcons Assassin" title="Assassins"></span>
+        <span class="filter tagIcons Warrior" title="Warriors"></span>
+        <span class="filter tagIcons Support" title="Supports"></span>
+        <span class="filter tagIcons Specialist" title="Specialists"></span>
+    </div>
+    <div id="heroList">
+    </div>
+    <table id="dataTable">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tr>
+            <th class="heroHeader">Hero</th>
+            <th class="roleHeader">Role</th>
+            <th class="middleHeader">Basic Abilities</th>
+            <th class="middleHeader">Talents</th>
+            <th class="formHeader">Special</th>
+        </tr>
+    </table>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="data.json"></script>
+<script src="scripts.js"></script>
+
+</html>
