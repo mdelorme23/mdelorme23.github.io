@@ -102,26 +102,17 @@ function heroList(heroesNames, heroesTags){
 //Fill basic abilities information
 function listBasics(heroData){
 	var heroString = "<td>";
-	var basicAbilities = {};
 	for(var i = 0; i< Object.keys(heroData.basic).length; i++){
-		for(var key in heroData.basic[i]) {
-		  if (heroData.basic[i].hasOwnProperty(key)) {
-		  	basicAbilities[key] = ( typeof basicAbilities[key] != 'undefined' && basicAbilities[key] instanceof Array ) ? basicAbilities[key] : []
-		  	basicAbilities[key].push(heroData.basic[i][key]);
-		  }
-		}
-	}
-	for(var key in basicAbilities) {
-		 if (basicAbilities.hasOwnProperty(key)) {
-		 	if(basicAbilities[key].length > 1){
-			 	heroString += "<span class='grouped'>";
-			 	for(var i=0; i<basicAbilities[key].length; i++){
-			 		heroString += "<span class='" + basicAbilities[key][i] + "'>" + basicAbilities[key][i] + "</span>";
-			 	}
-			  	heroString += " <strong>["+key+"]</strong></span>";
-			}else{
-				heroString += "<span class='" + basicAbilities[key] + "'>" + basicAbilities[key] + " <strong>["+key+"]</strong></span>";
-			}
+		for (var key in heroData.basic[i]) {
+		  	if (heroData.basic[i].hasOwnProperty(key)) {
+		  		if(typeof heroData.basic[i][key] === "object"){
+		  			for(var subkey in heroData.basic[i][key]) {
+		  				heroString += "<span class='" + heroData.basic[i][key][subkey].effect + "'> " + heroData.basic[i][key][subkey].effect + " (" + heroData.basic[i][key][subkey].duration + ") <strong>["+key+"]</strong></span>";
+		  			}
+		  		}else{
+				  	heroString += "<span class='" + heroData.basic[i][key] + "'>" + heroData.basic[i][key] + " <strong>["+key+"]</strong></span>";
+		  		}
+		  	}
 		}
 	}
 	heroString += "</td>";
@@ -131,22 +122,13 @@ function listBasics(heroData){
 //Fill talent information
 function listTalents(heroData){
 	var heroString = "<td>";
-	var f = 0;
 	for(var i = 0; i< Object.keys(heroData.talent).length; i++){
 		for (var key in heroData.talent[i]) {
 		  	if (heroData.talent[i].hasOwnProperty(key)) {
-		  		if(typeof heroData.talent[i][key] === "object" && f == 0){
-		  			heroString += "<span class='grouped'>";
+		  		if(typeof heroData.talent[i][key] === "object"){
 		  			for(var subkey in heroData.talent[i][key]) {
-		  				heroString += "<span class='" + heroData.talent[i][key][subkey] + "'>" + heroData.talent[i][key][subkey] + "</span>";
+		  				heroString += "<span class='" + heroData.talent[i][key][subkey].effect + "'><strong>{"+heroData.talent[i][key][subkey].level+"}</strong> " + heroData.talent[i][key][subkey].effect + (heroData.talent[i][key][subkey].duration ? (" (" + heroData.talent[i][key][subkey].duration + ")") : "" ) + " <strong>["+key+"]</strong></span>";
 		  			}
-		  			f = 1;
-		  		}else if(typeof heroData.talent[i][key] === "object" && f == 1){
-		  			for(var subkey in heroData.talent[i][key]) {
-		  				heroString += "<span class='" + heroData.talent[i][key][subkey] + "'>" + heroData.talent[i][key][subkey] + "</span>";
-		  				heroString += " <strong>["+subkey+"]</strong></span>";
-		  			}
-		  			f = 0;	
 		  		}else{
 				  	heroString += "<span class='" + heroData.talent[i][key] + "'>" + heroData.talent[i][key] + " <strong>["+key+"]</strong></span>";
 		  		}
@@ -162,9 +144,15 @@ function listForms(heroData){
 	var heroString = "<td>";
 	for(var i = 0; i< Object.keys(heroData.form).length; i++){
 		for (var key in heroData.form[i]) {
-		  if (heroData.form[i].hasOwnProperty(key)) {
-		  	heroString += "<span class='" + heroData.form[i][key] + "'>" + heroData.form[i][key] + " <strong>["+key+"]</strong></span>";
-		  }
+			if (heroData.form[i].hasOwnProperty(key)) {
+			  	if(typeof heroData.form[i][key] === "object"){
+			  		for(var subkey in heroData.form[i][key]) {
+			  			heroString += "<span class='" + heroData.form[i][key][subkey].effect + "'>"+ (heroData.form[i][key][subkey].level ? ("<strong>{" + heroData.form[i][key][subkey].level + "}</strong> ") : "" ) + heroData.form[i][key][subkey].effect + " (" + heroData.form[i][key][subkey].duration + ") <strong>["+key+"]</strong></span>";
+			  		}
+			  	}else{
+				  	heroString += "<span class='" + heroData.form[i][key] + "'>" + heroData.form[i][key] + " <strong>["+key+"]</strong></span>";
+			  	}
+		  	}
 		}
 	}
 	heroString += "</td>";
