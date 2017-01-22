@@ -1,6 +1,9 @@
-$('.tabs li').on('click', function(){
-	$('.showcase, .tabs').children('.active').removeClass('active');
-	var clickedClass = $(this).attr("class");
-	$(this).addClass('active');
-	$('.showcase').children('.' + clickedClass).addClass('active');
+$(function() {
+	$('.sections > span').click(function(){
+		if(!$(this).hasClass('active')){
+			$('.sections > span').removeClass("active");
+			$(this).addClass('active');
+			$('.contained1').toggle();
+		}
+	});
 });

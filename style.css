@@ -1,11 +1,15 @@
 * { font-family: "Open Sans", Arial, sans-serif;}
 
 body, html { margin: 0; padding: 0; }
-.container1, .container2 { padding: 25px 20px 50px; background: transparent url("img/pinstriped_suit.png") repeat scroll 0% 0%; color: #DDDDDD; }
+.container1, .container2 { padding: 25px 0 50px; background: transparent url("img/pinstriped_suit.png") repeat scroll 0% 0%; color: #DDDDDD; }
 /* Background pattern from subtlepatterns.com */
 .container2 { background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px 15px 25px 20px #111; }
 /* Background pattern from subtlepatterns.com */
 .contained1, .contained2 { max-width: 1280px; min-width: 560px; margin : auto; }
+.sections{ margin:0 auto; width:400px; text-align:center; padding:5px 0 10px;}
+.sections > span { display:inline-block; width: 150px; cursor:pointer; background: transparent url("img/mochaGrunge.png") repeat scroll 0% 0%; padding:10px 0; margin:10px 10px; color:black; font-size:20px; border-radius:3px; }
+/* Background pattern from subtlepatterns.com */
+.sections > span.active { font-weight:bold; box-shadow: 0 4px 10px 4px #111;}
 header{  background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px -15px 25px 20px #111; position: relative; padding: 0 20px; }
 /* Background pattern from subtlepatterns.com */
 h1{ max-width: 1280px; min-width: 560px; margin:auto; padding-bottom: 5px; }
@@ -17,10 +21,11 @@ h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-wei
 .tabs li { list-style-type: none; display: inline-block; cursor: pointer; width: 150px; height: 150px; border-bottom: 3px solid #1856CF; transition: border-bottom 0.2s; }
 
 .vids { display: inline-block; margin: 15px 10px; min-width: 560px; width: 48%; }
-.demo { display: inline-block; margin: 15px 10px; min-width: 1280px; }
+.imgs { margin: 25px 0; }
+.demo { display: inline-block; margin: 15px 0; min-width: 1280px; }
 .vids:last-child { width: 100%; }
 
-.mobile { display: none; }
+.mobile, .hide { display: none; }
 .non-mobile { display: block; }
 
 .floats { width: 49.5%; display: inline-block; }/* not so float anymore */
@@ -33,7 +38,7 @@ div.overlay:hover, .tabs li.active div.overlay { background-color: rgba(24,86,20
 .tabs li:hover { border-bottom: 3px solid #13377E; }
 ul.tabs { text-align: center; padding: 0; margin: 0; margin-bottom: 25px; }
 
-p { margin: auto; text-align: center; padding: 10px; width: 480px; background-color: #444444; margin-top: 25px; border-radius: 10px; box-shadow: 5px 5px 5px 0 #111; color: #DDDDDD;}
+p { margin: auto; text-align: center; padding: 10px; width:auto; max-width: 800px; background-color: #444444; margin-top: 20px; border-radius: 10px; box-shadow: 5px 5px 5px 0 #111; color: #DDDDDD;}
 p > a:hover { color: #46AEE0; }
 h2 { margin: auto; padding-top: 30px; color: #2a9fd6;  font-size: 34px; }
 a, a:visited { color: #2a9fd6; transition: color 0.2s;}
