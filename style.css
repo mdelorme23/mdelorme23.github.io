@@ -1,6 +1,19 @@
 * { font-family: "Open Sans", Arial, sans-serif;}
 
 body, html { margin: 0; padding: 0; }
+
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container1 {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
 .container1, .container2 { padding: 25px 0 25px; background: transparent url("img/pinstriped_suit.png") repeat scroll 0% 0%; color: #DDDDDD; }
 /* Background pattern from subtlepatterns.com */
 .container2 { background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px 15px 25px 20px #111; }
@@ -87,15 +100,15 @@ a.icons:hover .fade { opacity: 0; }
 
 .cards-grid {
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 1fr 1fr;
 	column-gap: 25px;
-	padding: 10% 20% 12%;
+	padding: 0 20%;
 }
 .card {
 	text-align: center;
 	padding-top: 25px;
 	padding-bottom: 20px;
-	background: rgba(180, 180, 180, 0.60);
+	background: rgba(180, 180, 180, 0.6);
 	border-radius: 25px;
 	color: black;
 	transition: background 0.3s;
@@ -103,11 +116,11 @@ a.icons:hover .fade { opacity: 0; }
 }
 
 .card:hover {
-	background: rgba(200, 200, 200, 0.80);
+	background: rgba(200, 200, 200, 0.8);
 }
 
 .card-title, .modal-title {font-weight: bold;}
-.card-text {margin: 15px 0 20px;}
+.card-text {margin: 15px 15px 20px;}
 .card-tech, .modal-tech {width:100%; margin: auto; text-align: center;}
 .card-tech span, .modal-tech span {font-weight: bold; border-radius: 5px; margin: 0 5px; padding: 4px 8px; background-color: #006dc0; color: white;}
 .card-details {font-style: italic; margin-top: 15px;}
@@ -117,7 +130,7 @@ a.icons:hover .fade { opacity: 0; }
 	max-width: 800px;
 	max-height: 90%;
 	border-radius: 25px;
-	background: rgba(180, 180, 180);
+	background: rgba(180, 180, 180, 0.8);
 	border: none;
 	opacity: 0;
 	transition: 
