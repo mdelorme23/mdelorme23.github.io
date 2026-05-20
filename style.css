@@ -1,7 +1,7 @@
 * { font-family: "Open Sans", Arial, sans-serif;}
 
 body, html { margin: 0; padding: 0; }
-.container1, .container2 { padding: 25px 0 50px; background: transparent url("img/pinstriped_suit.png") repeat scroll 0% 0%; color: #DDDDDD; }
+.container1, .container2 { padding: 25px 0 25px; background: transparent url("img/pinstriped_suit.png") repeat scroll 0% 0%; color: #DDDDDD; }
 /* Background pattern from subtlepatterns.com */
 .container2 { background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px 15px 25px 20px #111; }
 /* Background pattern from subtlepatterns.com */
@@ -84,3 +84,94 @@ a.icons:hover .fade { opacity: 0; }
 .link a:hover { color: #2a9fd6; }
 
 .offcenter { width: 1280px; text-align: left; }
+
+.cards-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 25px;
+	padding: 12.5% 20%;
+}
+.card {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	background: rgba(180, 180, 180, 0.60);
+	border-radius: 25px;
+	color: black;
+	transition: background 0.3s;
+	cursor: pointer;
+}
+
+.card:hover {
+	background: rgba(200, 200, 200, 0.80);
+}
+
+.card-title, .modal-title {font-weight: bold;}
+.card-text {margin: 15px 0 20px;}
+.card-tech, .modal-tech {width:100%; margin: auto; text-align: center;}
+.card-tech span, .modal-tech span {font-weight: bold; border-radius: 5px; margin: 0 5px; padding: 4px 8px; background-color: #006dc0; color: white;}
+.card-details {font-style: italic; margin-top: 15px;}
+
+.modal {
+	width: 80%;
+	max-width: 800px;
+	max-height: 90%;
+	border-radius: 25px;
+	background: rgba(180, 180, 180);
+	border: none;
+	opacity: 0;
+	transition: 
+		opacity 0.3s ease, 
+		display 0.3s ease allow-discrete;
+}
+
+dialog[open] {
+  opacity: 1;
+}
+
+@starting-style {
+  dialog[open] {
+    opacity: 0;
+  }
+}
+
+.modal-title {text-align: center; font-size: 1.5em;}
+.modal button {
+	position: absolute; 
+	top: 15px; 
+	right: 15px;
+	background-color: #006dc0;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 0 8px 1px;
+	font-weight: bold;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+.modal-content {width: 100%; height: 100%;}
+
+.modal-tech {margin:20px auto 25px;}
+.modal-desc {margin: 0 25px 20px;}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px); /* Blurs the project cards behind the modal */
+  transition: 
+    background-color 0.3s ease, 
+    backdrop-filter 0.3s ease, 
+    display 0.3s ease allow-discrete;
+}
+
+dialog[open]::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+/* 3. Where the backdrop animates FROM upon opening */
+@starting-style {
+  dialog[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
+}

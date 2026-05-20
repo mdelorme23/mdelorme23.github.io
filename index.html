@@ -21,18 +21,71 @@
 <span class="alignRight"><a href="mailto:martin.delorme6@gmail.com">martin.delorme6@gmail.com</a><br />(438) 274-0941</span></h1>
 </header>
 <div class="container1">
-	<div class="contained1" data-section="animation">
-		<div style="font-weight:bold; font-size:42px; width:100%; text-align:center; margin-top: 12.5%;">Update In Progress</div>
-		<div style="font-weight:bold; font-size:36px; width:100%; text-align:center; margin-bottom: 12.5%">Come Back Soon</div>
+	<div class="cards-grid">
+		<div class="card" onclick="openModal(1)">
+			<div class="card-title">Mocap Shoot Interface</div>
+			<div class="card-text">Description Line</div>
+			<div class="card-tech"><span>Python</span><span>Tkinter</span><span>SQL</span></div>
+			<div class="card-details">Click to learn more</div>
+		</div>
+		<div class="card" style="cursor:default;">
+			<div class="card-title">Client Selection Website</div>
+			<div class="card-text">Description Line</div>
+			<div class="card-tech"><span>PHP</span><span>Javascript</span></div>
+			<div class="card-details">Click to learn more</div>
+		</div>
+		<div class="card" style="cursor:default;">
+			<div class="card-title">MotionBuilder Pipeline</div>
+			<div class="card-text">Description Line</div>
+			<div class="card-tech"><span>Python</span><span>PySide</span></div>
+			<div class="card-details">Click to learn more</div>
+		</div>
 	</div>
+
+	<dialog class="modal" id="modal1">
+		<div class="modal-content">
+			<div class="modal-title">Mocap Shoot Interface</div>
+			<button onclick="closeModal(1)">X</button>
+			<div class="modal-tech"><span>Python</span><span>Tkinter</span><span>SQL</span></div>
+			<div class="modal-desc">
+			I developed a stand-alone python graphical interface using Tkinter to centralize data management and recording during motion capture shoots into a single tool. 
+			Take data, associated assets, filenames, and all pertinent details are saved in an SQL database accessed by both the tool and the post-production pipeline. 
+			The tool ensures unique take names across a project and allows assets from previous shoots to be imported during prep.
+			<br /><br />
+			The tool connects to multiple capturing devices in order to trigger recording on all of them at the same time. It also saves each take information from these capturing devices in its database.
+			It connects to a large range of devices: motion capture software, reference videos recorder, head mounted camera systems, DCC and game engine.
+			It ensures integrity between assets name in its database and the connected software to remove naming disparity during the rest of the pipeline.
+			<br /><br />
+			A web interface is also available to allow multiple users to view live shoot data as it progresses. Users can update a limited set of fields relevant to their expertise, 
+			and a comprehensive action log tracks all changes made during the shoot.
+			<br /><br />
+			The data and reports are exported in various formats for members of the team. It is also sent to Flow PTR (ShotGrid) and the Client Selection Website with the videos.
+			The reference videos are processed as soon as possible to allow the client to make data selection in the next hour if needed. The video compression (through FFmpeg) and data upload sections of the tool 
+			were initially combined in the main interface, but they were separated for stability and increased processing power.
+			</div>
+		</div>
+	</dialog>
+	<dialog class="modal" id="modal2">
+		<div class="modal-content">
+			<div class="modal-title">Client Selection Website</div>
+			<button onclick="closeModal(2)">X</button>
+			<div class="modal-tech"><span>PHP</span><span>Javascript</span></div>
+			<div class="modal-desc"></div>
+		</div>
+	</dialog>
+	<dialog class="modal" id="modal3">
+		<div class="modal-content">
+			<div class="modal-title">MotionBuilder Pipeline</div>
+			<button onclick="closeModal(3)">X</button>
+			<div class="modal-tech"><span>Python</span><span>PySide</span></div>
+			<div class="modal-desc"></div>
+		</div>
+	</dialog>
 </div>
+
 <div class="container2">
 	<div class="contained2">
 		<div class="float left">
-			<!--<h2>About</h2>
-			<div class="text">
-				Lorem Ipsum
-			</div>-->
 			<div class="float right mobile">
 				<img class="portrait" src="img/portrait.jpg" alt="Ma photo" />
 				<div class="center-icons">
@@ -70,7 +123,6 @@
 		<div class="clear"></div>
 	</div>
 </div>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script src="scripts.js"></script>
 
 </body>
