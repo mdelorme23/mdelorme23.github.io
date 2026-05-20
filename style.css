@@ -89,7 +89,7 @@ a.icons:hover .fade { opacity: 0; }
 	display: grid;
 	grid-template-columns: auto auto auto;
 	column-gap: 25px;
-	padding: 12.5% 20%;
+	padding: 10% 20% 12%;
 }
 .card {
 	text-align: center;
