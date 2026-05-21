@@ -35,14 +35,12 @@
 				<div class="card-tech"><span>PHP</span><span>Javascript</span></div>
 				<div class="card-details">Click to learn more</div>
 			</div>
-			<!--
 			<div class="card" onclick="openModal(3)">
 				<div class="card-title">MotionBuilder Pipeline</div>
-				<div class="card-text">-</div>
+				<div class="card-text">Array of tools to automatize and simplify the complete motion capture data pipeline in MotionBuilder</div>
 				<div class="card-tech"><span>Python</span><span>PySide</span></div>
 				<div class="card-details">Click to learn more</div>
 			</div>
-			-->
 		</div>
 
 		<dialog class="modal" id="modal1">
@@ -95,7 +93,22 @@
 				<button onclick="closeModal(3)">X</button>
 				<div class="modal-tech"><span>Python</span><span>PySide</span></div>
 				<div class="modal-desc">
-
+					The MotionBuilder pipeline evolved constantly to fit the current and future needs of the motion capture pipeline. Initially, the UI was purely the native UI elements from MotionBuilder.
+					To allow for a more customizable and nicer UI, all the interfaces were transposed to PySide inserted in a dockable native UI tool.
+					<br /><br />
+					The pipeline has access to the upstream data of the Mocap Shoot Interface and the Client Selection Website, that it uses to automate a lot of integration and exportation tasks, minimizing manual intervention. 
+					<br /><br />
+					From asset preparation to final exports, manual processes have been condensed into easy to use UIs with buttons taking care of repetitive and error-prone manipulations. 
+					This includes managing the real-time devices during the shoot, managing environment position for the motion capture shoot and for the export to engine, 
+					pairing assets with range of motions, and more.
+					<br /><br />
+					The integration process that required manual preparation of assets per take has been automated to file selection that processes them all and leaves them ready for retargeting touch ups.
+					Integration went from taking 5 to 15 minutes per file to 1 to 3 minutes processing time per batch of multiple files.
+					<br /><br />
+					The files export process for delivery automatically separates the takes by client selection parts with the appropriate assets.
+					<br /><br />
+					Throughout the pipeline, the status and assignee of tasks in Flow PTR (ShotGrid) is updated automatically when possible. For any manual step, like retargeting and animating, a UI is available with 
+					direct access to the relevent tasks for the currently opened file, increasing the ease of keeping tasks up to date.
 				</div>
 			</div>
 		</dialog>
@@ -103,36 +116,31 @@
 
 	<div class="container2">
 		<div class="contained2">
-			<div class="float left">
-				<div class="float right mobile">
-					<img class="portrait" src="img/portrait.jpg" alt="Ma photo" />
-					<div class="center-icons">
-						<a href="pdf/DelormeMartin_Resume.pdf" target="_blank" class="icons first"><img class="fade" src="img/CV.png" width="50" height="50" alt="Download Resume" /><img class="hideBehind" src="img/CV_hover.png" width="50" height="50" alt="Download Resume" /></a>
-						<a href="http://www.linkedin.com/in/martin-delorme/" target="_blank" class="icons"><img class="fade" src="img/linkedin.png" width="50" height="50" alt="LinkedIn" /><img class="hideBehind" src="img/linkedin_hover.png" width="50" height="50" alt="LinkedIn" /></a>
+			<div>
+				<h2>Contact</h2>
+				<div class="contact-infos">
+					<div>
+						<ul class="infos">
+							<li>Name: Martin Delorme</li>
+							<li>Email: <a href="mailto:martin.delorme6@gmail.com">martin.delorme6@gmail.com</a></li>
+							<li>Phone: (438) 274-0941</li>
+							<li>Location: Laval, Québec, Canada</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="infos">
+							<li>Education :
+								<ul>
+									<li>Baccalauréat avec majeure de création en 3D<br />(Baccalaureate with major in 3D creation)</li>
+									<li>Techniques d'intégration multimédia<br />(Multimedia integration techniques)</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<h2>Contact</h2>
-				<div class="floats">
-					<ul class="infos">
-						<li>Name: Martin Delorme</li>
-						<li>Email: <a href="mailto:martin.delorme6@gmail.com">martin.delorme6@gmail.com</a></li>
-						<li>Phone: (438) 274-0941</li>
-						<li>Location: Laval, Québec, Canada</li>
-					</ul>
-				</div>
-				<div class="floats">
-					<ul class="infos">
-						<li>Education :
-							<ul>
-								<li>Baccalauréat avec majeure de création en 3D<br />(Baccalaureate with major in 3D creation)</li>
-								<li>Techniques d'intégration multimédia<br />(Multimedia integration techniques)</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
 			</div>
-			<div class="float right non-mobile">
-				<img class="portrait" src="img/portrait.jpg" alt="Mon Portrait" width="250" height="250" />
+			<div>
+				<img class="portrait" src="img/portrait.jpg" alt="My Portrait" width="250" height="250" />
 				<div class="center-icons">
 					<a href="pdf/DelormeMartin_Resume.pdf" target="_blank" class="icons first"><img class="fade" src="img/CV.png" width="50" height="50" alt="Download Resume" /><img class="hideBehind" src="img/CV_hover.png" width="50" height="50" alt="Download Resume" /></a>
 					<a href="http://www.linkedin.com/in/martin-delorme/" target="_blank" class="icons"><img class="fade" src="img/linkedin.png" width="50" height="50" alt="LinkedIn" /><img class="hideBehind" src="img/linkedin_hover.png" width="50" height="50" alt="LinkedIn" /></a>

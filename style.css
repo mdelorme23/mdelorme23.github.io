@@ -14,11 +14,14 @@ body, html { margin: 0; padding: 0; }
 	align-items: center;
 }
 
+.contained2 {display:grid; grid-template-columns: 1fr auto; column-gap: 25px; padding: 0 20px;}
+.contact-infos {display:grid; grid-template-columns: auto auto;}
+
 .container1, .container2 { padding: 25px 0 25px; background: transparent url("img/pinstriped_suit.png") repeat scroll 0% 0%; color: #DDDDDD; }
 /* Background pattern from subtlepatterns.com */
 .container2 { background: transparent url("img/footer_lodyas.png") repeat scroll 0% 0%; box-shadow: -5px 15px 25px 20px #111; }
 /* Background pattern from subtlepatterns.com */
-.contained1, .contained2 { max-width: 1280px; min-width: 560px; margin : auto; }
+.contained1, .contained2 { max-width: 1280px; min-width: 560px; margin : auto;}
 .sections{ margin:0 auto; width:400px; text-align:center; padding:5px 0 10px;}
 .sections > span { display:inline-block; width: 150px; cursor:pointer; background: transparent url("img/mochaGrunge.png") repeat scroll 0% 0%; padding:10px 0; margin:10px 10px; color:black; font-size:20px; border-radius:3px; }
 /* Background pattern from subtlepatterns.com */
@@ -32,11 +35,6 @@ h1 a, h1 a:visited, h1 a:hover { color: #2a9fd6; text-decoration: none; font-wei
 .showcase div.active { display: block; }
 /*.tabs li { list-style-type: none; font-weight: 300; display: inline-block; cursor: pointer; padding: 5px 10px 7px; font-size: 18px; color: white; background-color: #2a9fd6; margin: 10px; border-radius: 5px; border-bottom: 3px solid #1856CF; transition: background-color 0.3s, border-bottom 0.3s;}*/
 .tabs li { list-style-type: none; display: inline-block; cursor: pointer; width: 150px; height: 150px; border-bottom: 3px solid #1856CF; transition: border-bottom 0.2s; }
-
-.vids { display: inline-block; margin: 15px 10px; min-width: 560px; width: 48%; }
-.imgs { margin: 25px 0; }
-.demo { display: inline-block; margin: 15px 0; min-width: 1280px; }
-.vids:last-child { width: 100%; }
 
 .mobile, .hide { display: none; }
 .non-mobile { display: block; }
@@ -78,20 +76,6 @@ a.icons:hover .fade { opacity: 0; }
 .text { margin: 5px 0 30px; max-width: 800px; }
 .float.left h2 { padding-top: 0; }
 
-@media only screen and (max-width: 1225px) {
-	.vids { width: 100%; }
-	.text { float: left; }
-	h2 { clear: both; }
-	.left { margin-right: 25px; width: calc(100% - 275px); }
-}
-
-@media only screen and (max-width: 960px) {
-	.mobile { display: block; }
-	.non-mobile { display: none; }
-	.left { width: 100%; max-width: none; }
-	.text { width: calc(100% - 300px); }
-}
-
 .link { display:block; width: 250px; margin:auto; padding-top: 10px; font-size:24px; text-align: center; }
 .link a, .link a:visited { color: #DDDDDD; text-decoration: underline; }
 .link a:hover { color: #2a9fd6; }
@@ -100,9 +84,9 @@ a.icons:hover .fade { opacity: 0; }
 
 .cards-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 25px;
-	padding: 0 20%;
+	padding: 0 18%;
 }
 .card {
 	text-align: center;
@@ -119,16 +103,16 @@ a.icons:hover .fade { opacity: 0; }
 	background: rgba(200, 200, 200, 0.8);
 }
 
-.card-title, .modal-title {font-weight: bold;}
+.card-title, .modal-title {font-weight: bold; margin:0 15px;}
 .card-text {margin: 15px 15px 20px;}
-.card-tech, .modal-tech {width:100%; margin: auto; text-align: center;}
-.card-tech span, .modal-tech span {font-weight: bold; border-radius: 5px; margin: 0 5px; padding: 4px 8px; background-color: #006dc0; color: white;}
+.card-tech, .modal-tech {width:100%; margin: auto; text-align: center; display: flex; flex-wrap: wrap; justify-content: center; row-gap: 10px;}
+.card-tech span, .modal-tech span {font-weight: bold; border-radius: 5px; margin: 0 5px; padding: 4px 8px; background-color: #006dc0; color: white; flex-shrink: 0;}
 .card-details {font-style: italic; margin-top: 15px;}
 
 .modal {
-	width: 80%;
+	width: 85%;
 	max-width: 800px;
-	max-height: 90%;
+	max-height: 85%;
 	border-radius: 25px;
 	background: rgba(180, 180, 180, 0.8);
 	border: none;
@@ -169,7 +153,7 @@ dialog[open] {
 
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px); /* Blurs the project cards behind the modal */
+  backdrop-filter: blur(4px);
   transition: 
     background-color 0.3s ease, 
     backdrop-filter 0.3s ease, 
@@ -181,10 +165,18 @@ dialog[open]::backdrop {
   backdrop-filter: blur(4px);
 }
 
-/* 3. Where the backdrop animates FROM upon opening */
 @starting-style {
   dialog[open]::backdrop {
     background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(0px);
   }
+}
+
+@media only screen and (max-width: 1300px) {
+	.cards-grid { padding: 0 12%; }
+}
+
+@media only screen and (max-width: 960px) {
+	.cards-grid { padding: 0 5%; }
+	.contact-infos {display:grid; grid-template-columns: auto;}
 }
